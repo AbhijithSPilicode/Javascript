@@ -50,18 +50,4 @@ if (iceCreamVanOutside || houseStatus === "on fire") {
   const greeting = isBirthday? "Happy birthday Mrs. Smith — we hope you have a great day!": "Good morning Mrs. Smith.";
   console.log(greeting)
 
-  var grade='A';  
-var result;  
-switch(grade)
-{  
-    case 'A':  
-        result+=" 10";  
-    case 'B':  
-        result+=" 9";  
-    case 'C':  
-        result+=" 8";  
-    default:  
-        result+=" 0";  
-}  
-document.write(result);
   
