@@ -1,0 +1,25 @@
+
+
+<html>
+    <head>
+        <script type="text/javascript">
+        function Cars(car_brand,car_model,car_price)
+        {
+            this.car_brand=car_brand;
+            this.car_model=car_model;
+            this.car_price=car_price;
+            this.teslaAutoPilot=function()
+            {
+                document.write("<h2>This car has Auto pilot</h2>");
+            }
+        }
+        var c1=new Cars("Tesla","Model3",35000);
+        var c2=new Cars("Tesla","Model P",45000);
+        c1.teslaAutoPilot();
+        document.write(c2.car_model)
+        </script>
+    </head>
+    <body>
+
+    </body>
+ </html>  
