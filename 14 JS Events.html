@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <script src="14 JS events.js" defer></script>
+    <style>
+        .box{
+            background:rebeccapurple;
+            color:lightgoldenrodyellow;
+            height:30px;
+            width:200px;
+            font-size:20px;
+            padding:30px;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Wnen an event occurs in html dom javascript code can be executed.Eg:clicking-->
+    <!--click-->
+    <h1 onclick="this.innerHTML='Abhijith' ">what is your name?</h1><!--when you click on top of what is your name will turn into abhijith-->
+    <!--changing colour>-->
+    <h1 onclick="changeColor(this)">Click to change colour</h1>
+    <!--button-->
+    <button id="button1">Click ME!!!</button>
+    <!--onload--> <!--these events often trigger when user enters or leaves the page-->
+    <body onload="checkCookies()"></body>
+    <!--textbox--> <!--when typing one letter on text box,it removes one letter from h1-->
+    <input type="text" id="words" oninput="removeLetterFromH1()"/>
+    <!--onmouseover-->
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="box">Mouse Over Me</div>
+    <!--AddEventListener--> <!--event handler to specified element without overwriting existing event handlers.so you can add many eventhandlers to one element-->
+    <!--syntax:element.addEventListener(event,function,useCapture)--> <!--usecapture is a boolean value-->
+    <div id="myDiv">
+        <p id="myP">Fill out the university that you have graduated your b.tech as well as m.tech</p>
+    </div>
+    <div id="myDiv2">
+        <p id="myP2">i have completed my b.tech from amrita university and m.tech from christ university</p>
+    </div>
